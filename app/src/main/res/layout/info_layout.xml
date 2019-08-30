@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:src="@drawable/welcome"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:paddingRight="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_name"
+            android:text="-----"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music :"
+            android:paddingRight="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_music"
+            android:text="-----"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price :"
+            android:paddingRight="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_price"
+            android:text="-----"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contact :"
+            android:paddingRight="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_contact"
+            android:text="-----"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:textAlignment="center"
+            android:background="#000"
+            android:textColor="#F1F1F1"
+            android:textSize="20dp"
+
+            />
+
+        <com.project.restaurantapp.Custom.NonScrollListView
+            android:id="@+id/res_menu_breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            ></com.project.restaurantapp.Custom.NonScrollListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:text="Dinner"
+            android:textAlignment="center"
+            android:textColor="#F1F1F1"
+            android:textSize="20dp" />
+        <com.project.restaurantapp.Custom.NonScrollListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_menu_dinner"
+            android:minHeight="150dp"
+            ></com.project.restaurantapp.Custom.NonScrollListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drinks - hard"
+            android:textAlignment="center"
+            android:background="#000"
+            android:textColor="#F1F1F1"
+            android:textSize="20dp"
+            />
+        <com.project.restaurantapp.Custom.NonScrollListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_menu_harddrinks"
+            android:minHeight="150dp"
+            ></com.project.restaurantapp.Custom.NonScrollListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drinks - soft"
+            android:textAlignment="center"
+            android:background="#000"
+            android:textColor="#F1F1F1"
+            android:textSize="20dp"
+            />
+        <com.project.restaurantapp.Custom.NonScrollListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_menu_softdrinks"
+            android:minHeight="150dp"
+            ></com.project.restaurantapp.Custom.NonScrollListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FastFood"
+            android:textAlignment="center"
+            android:background="#000"
+            android:textColor="#F1F1F1"
+            android:textSize="20dp"
+            />
+        <com.project.restaurantapp.Custom.NonScrollListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_menu_fastfood"
+            ></com.project.restaurantapp.Custom.NonScrollListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lunch"
+            android:textAlignment="center"
+            android:background="#000"
+            android:textColor="#F1F1F1"
+            android:textSize="20dp"
+            />
+        <com.project.restaurantapp.Custom.NonScrollListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/res_menu_lunch"
+            android:minHeight="150dp"
+            ></com.project.restaurantapp.Custom.NonScrollListView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
